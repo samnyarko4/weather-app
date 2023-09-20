@@ -1,0 +1,248 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.sidebar{
+  background-color: #eb6e4b;
+
+}
+
+.weatherinfo img{ 
+  -webkit-filter: drop-shadow(1px 1px 0 black)
+  drop-shadow(-1px -1px 0 black);
+filter: drop-shadow(1px 1px 0 black) 
+drop-shadow(-1px -1px 0 black);
+}
+
+.contain{
+  background-color: #28282B;
+  grid-template-columns: 1fr 2fr;
+}
+
+.search{
+  border-radius: 15px;
+  padding: 5px 15px;
+  width: 300px;
+}
+
+.cl{
+ margin-left: 1rem;
+}
+
+.main-temp{
+  font-family: 'Raleway', sans-serif;
+  font-weight:500 ;
+  font-size: 144px;
+}
+
+.unit{
+  font-size: 48px;
+  font-weight: 250;
+}
+
+.condition{
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.maincontent{
+  grid-template-rows: .3fr .8fr 2fr;
+}
+
+.cirlce-button{
+  border-radius: 150px;
+}
+
+.main-circle{
+  background-color: #585676;
+}
+
+.days-grid{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  gap: 26px;
+}
+
+.cards{
+width: 120px;
+  background-color: #000;
+  height: 177px;
+
+}
+
+.cards img{
+  width: 56.44px;
+  height: 60px;
+  margin: auto;
+}
+.date{
+  font-size: 18px;
+}
+
+.highlights{
+  margin-top:30px ;
+}
+
+.highlights h2{
+  font-weight: 700 ;
+  font-size: 24px;
+}
+
+.big-card{
+  background-color: #000;
+  height: 204px;
+}
+
+.medium-card{
+  background-color: #000;
+  height: 159px;
+}
+
+.wind-status{
+  font-size: 16px;
+}
+
+.wind-num{
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.mph{
+  font-size: 36px;
+font-weight: 500;
+}
+
+.bar{
+margin: auto;
+  background-color: #E7E7EB;
+  border-radius: 80px;
+  margin-top: 5px;
+  height: 8px;
+  max-width: 229px;
+}
+
+.innerBar{
+  display: block;
+background-color: #eb6e4b;
+}
+
+.humid-num {
+  font-weight: 700; 
+  font-size: 12px;
+}
+
+.humid-num span{
+  margin-left: 90px;
+}
+
+.percentage{
+  font-size: 12px;
+}
+
+.temp-select{
+  font-size: 18px;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  padding: 0px 0px 0px 0px;
+}
+
+.temp-controls{
+  text-align: end;
+}
+
+.sidebar img{
+  margin: 0 auto;
+}
+
+.suggestions{
+  background-color: #000;
+ border-radius: 10px;
+  position: relative;
+  bottom: 5px;
+}
+
+button.suggestion {
+  border-bottom: #eb6e4b 3px solid;
+  background: none;
+  width: 100%;
+  margin: 10px 10px 0px 0px;
+}
+
+button.suggestion:hover{
+  background-color: #eb6e4b;
+  color: #000;
+}
+
+
+
+@media only screen and (max-width:600px){
+
+  #root{
+    width:100%;
+    padding:0px;
+  }
+  .contain{
+    grid-template-columns: 1fr;
+    
+  }
+
+  .sidebar img{
+    margin: 0 auto;
+    position: relative;
+    top: 5rem;
+  }
+
+  .maincontent{
+    grid-template-rows: .15fr .8fr 1fr;
+  }
+
+  .main-temp{
+    font-size: 144px;
+  }
+
+  .cards img{
+    height: 62px;
+
+  }
+
+  .date{
+    font-size: 16px;
+  }
+
+ 
+
+  .days-grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 26px ;
+    padding-left: 54px;
+    padding-right: 55px;
+    margin: 0 auto;
+  }
+
+  .high-temp .low-temp{
+    font-size: 16px;
+  }
+
+  .highlights{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .highlights-grid{
+    grid-template-columns: auto;
+    margin-bottom: 2rem;
+  }
+} 
+  
