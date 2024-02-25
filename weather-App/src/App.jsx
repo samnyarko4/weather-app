@@ -138,6 +138,7 @@ const barStyle = {
       handleSearch(location);
     }
   }} placeholder='Enter City Name' type="text" className='search' />
+  
     <button className='cirlce-button cl' onClick={handleLocationClick}><i className="fa-solid fa-location-crosshairs"></i></button>
 
     {location ?
